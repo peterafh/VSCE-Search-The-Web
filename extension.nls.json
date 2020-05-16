@@ -1,0 +1,12 @@
+{
+	"messages": [
+		"Nothing selected.",
+		"Select site for opening in browser",
+		"Action list empty! It can be configured in settings."
+	],
+	"keys": [
+		"nothingSelected",
+		"selectSiteForOpening",
+		"actionListEmpty"
+	]
+}

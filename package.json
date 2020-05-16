@@ -1,0 +1,134 @@
+{
+	"name": "search-the-web",
+	"displayName": "Search the web",
+	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
+	"version": "0.0.1",
+	"publisher": "peterfh",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:search-the-web.search",
+		"onCommand:search-the-web.searchTheWebActionList"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorHasSelection",
+					"command": "search-the-web.search",
+					"group": "navigation"
+				},
+				{
+					"when": "editorHasSelection",
+					"command": "search-the-web.searchTheWebActionList",
+					"group": "navigation"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "search-the-web.search",
+				"title": "%commands.search%"
+			},
+			{
+				"command": "search-the-web.searchTheWebActionList",
+				"title": "%commands.searchTheWebActionList%"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "search-the-web.search",
+				"key": "ctrl+f1",
+				"mac": "cmd+f1"
+			}
+		],
+		"configuration": {
+			"title": "%configuration.title%",
+			"properties": {
+				"search-the-web.actionList": {
+					"type": "array",
+					"default": [
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.google.com/search?q=%SELECTION%",
+							"label": "%actionList.googleSearch%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.google.com/search?q=%LANG%%20%SELECTION%",
+							"label": "%actionList.googleSearchWithLang%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://duckduckgo.com/?q=%SELECTION%",
+							"label": "%actionList.duckDuckGoSearch%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://duckduckgo.com/?q=%LANG%%20%SELECTION%",
+							"label": "%actionList.duckDuckGoSearchWithLang%"
+						},
+						{
+							"languages": [
+								"php"
+							],
+							"defaultFor": [
+								"php"
+							],
+							"url": "https://www.php.net/search.php?show=quickref&pattern=%SELECTION%",
+							"label": "%actionList.phpHelpSearch%"
+						},
+						{
+							"languages": [
+								"html",
+								"php",
+								"javascript",
+								"css"
+							],
+							"defaultFor": [
+								"html",
+								"javascript",
+								"css"
+							],
+							"url": "https://developer.mozilla.org/es/search?q=%SELECTION%",
+							"label": "%actionList.mozillaDeveloperSearch%"
+						}
+					],
+					"description": "%properties.actionList%"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"dependencies": {
+		"vscode-nls": "^2.0.2"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.45.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}

@@ -1,0 +1,12 @@
+{
+	"commands.search": "Открыть в Сети",
+	"commands.searchTheWebActionList": "Открыть в Сети: Выбрать адрес",
+	"configuration.title": "Search the web настройки",
+	"properties.actionList": "Список веб действий. Вы можете задать формирование ссылки с помощью параметров %SELECTION% (выделенный текст) и %LANG% (язык текущего файла).",
+	"actionList.googleSearch": "Google Поиск",
+	"actionList.duckDuckGoSearch": "DuckDuckGo Поиск",
+	"actionList.googleSearchWithLang": "Google Поиск (+язык)",
+	"actionList.duckDuckGoSearchWithLang": "DuckDuckGo Поиск (+язык)",
+	"actionList.phpHelpSearch": "помощь PHP Поиск",
+	"actionList.mozillaDeveloperSearch": "Mozilla Developer Поиск"
+}

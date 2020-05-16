@@ -1,0 +1,12 @@
+{
+	"commands.search": "Search the web",
+	"commands.searchTheWebActionList": "Search the web con...",
+	"configuration.title": "Configuración de Search the web",
+	"properties.actionList": "Lista de acciones de Search the web. Puedes indicar una lista de URLs con los parámetros %SELECTION% (texto seleccionado) y %LANG% (lenguaje del documento actual), las etiquetas y una lista de los lenguajes para los que estarán disponibles.",
+	"actionList.googleSearch": "Buscar en Google",
+	"actionList.duckDuckGoSearch": "Buscar en DuckDuckGo",
+	"actionList.googleSearchWithLang": "Buscar en Google (+lenguaje)",
+	"actionList.duckDuckGoSearchWithLang": "Buscar en DuckDuckGo (+languaje)",
+	"actionList.phpHelpSearch": "Ayuda de PHP",
+	"actionList.mozillaDeveloperSearch": "Mozilla Developer"
+}
