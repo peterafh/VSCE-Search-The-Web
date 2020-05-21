@@ -110,7 +110,8 @@ function getFilteredActionList(lang)
 	return actionList.filter(action => action.languages.includes('*') || action.languages.includes(lang));
 }
 
-function getSelection() {
+function getSelection()
+{
     var editor = vscode.window.activeTextEditor;
 
 	if (!editor) {
@@ -121,6 +122,15 @@ function getSelection() {
     var text = editor.document.getText(selection).trim();
     text = text.replace(/\s\s+/g, ' ');
 
+	// If selection is empty try to get the word at current cursor position
+	if (text.length == 0) {
+		var wordAtCursorRange = editor.document.getWordRangeAtPosition(selection.end);
+		
+		if (wordAtCursorRange !== undefined) {
+			text = editor.document.getText(wordAtCursorRange);
+		}
+	}
+	
     return text;
 }
 
