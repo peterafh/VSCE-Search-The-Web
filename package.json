@@ -24,12 +24,10 @@
 		"menus": {
 			"editor/context": [
 				{
-					"when": "editorHasSelection",
 					"command": "search-the-web.search",
 					"group": "navigation"
 				},
 				{
-					"when": "editorHasSelection",
 					"command": "search-the-web.searchTheWebActionList",
 					"group": "navigation"
 				}
