@@ -2,6 +2,8 @@
 
 This extension allows you to open the default browser and search the selected text using a set of predefined URLs.
 
+If no text is selected the word at cursor position will be searched. Useful if you want to use it for language reference, just as you can do in most IDEs to get help on the current word when you hit F1.
+
 Fork from **Open in web** by **VCaveman**\
 https://marketplace.visualstudio.com/items?itemName=VCaveman.open-in-web
 
@@ -108,6 +110,21 @@ Add localization for other languages.
 None at the moment.
 
 ## Release Notes
+
+### 0.0.2 (2020-05-21)
+### Added
+- If no text is selected the word at cursor position will be searched.
+- Missing actions for searching and translating with Yandex search engine.
+- New actions:
+  - Translate with DeepL
+  - Translate with Google
+  - Translate with WordReference
+  - WordReference word definition
+  - WordReference word synonyms
+  - Search in Wikipedia
+  - Search in DRAW Spanish dictionary
+  - Search in DRAE-DPD Spanish dictionary
+  - MySQL Documentation
 
 ### 0.0.1 (2020-05-16)
 
