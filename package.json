@@ -4,6 +4,11 @@
 	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
 	"version": "0.1.0",
 	"publisher": "peterfh",
+	"homepage": "https://github.com/peterafh/VSCE-Search-The-Web",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/peterafh/VSCE-Search-The-Web"
+	},	
 	"engines": {
 		"vscode": "^1.45.0"
 	},

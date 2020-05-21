@@ -111,6 +111,10 @@ None at the moment.
 
 ## Release Notes
 
+### 0.0.3 (2020-05-21)
+### Added
+- Public repository
+
 ### 0.0.2 (2020-05-21)
 ### Added
 - If no text is selected the word at cursor position will be searched.
