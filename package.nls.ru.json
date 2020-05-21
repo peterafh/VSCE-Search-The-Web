@@ -4,9 +4,13 @@
 	"configuration.title": "Search the web настройки",
 	"properties.actionList": "Список веб действий. Вы можете задать формирование ссылки с помощью параметров %SELECTION% (выделенный текст) и %LANG% (язык текущего файла).",
 	"actionList.googleSearch": "Google Поиск",
-	"actionList.duckDuckGoSearch": "DuckDuckGo Поиск",
 	"actionList.googleSearchWithLang": "Google Поиск (+язык)",
+	"actionList.duckDuckGoSearch": "DuckDuckGo Поиск",
 	"actionList.duckDuckGoSearchWithLang": "DuckDuckGo Поиск (+язык)",
+	"actionList.yandexSearch": "Яндекс Поиск",
+	"actionList.yandexSearchWithLang": "Яндекс Поиск (+язык)",
+	"actionList.googleTranslatorEng": "Google Переводчик (АНГЛ)",
+	"actionList.yandexTranslatorAuto": "Яндекс Переводчик (АВТО)",
 	"actionList.phpHelpSearch": "помощь PHP Поиск",
 	"actionList.mozillaDeveloperSearch": "Mozilla Developer Поиск"
 }

@@ -83,6 +83,90 @@
 						},
 						{
 							"languages": [
+								"*"
+							],
+							"url": "https://yandex.ru/search/?text=%SELECTION%",
+							"label": "%actionList.yandexSearch%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://yandex.ru/search/?text=%LANG%%20%SELECTION%",
+							"label": "%actionList.yandexSearchWithLang%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.deepl.com/translator#en/es/%SELECTION%",
+							"label": "%actionList.translateWithDeeplEN_ES%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=es&text=%SELECTION%",
+							"label": "%actionList.translateWithGoogleES%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://translate.yandex.ru/?text=%SELECTION%",
+							"label": "%actionList.yandexTranslatorAuto%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.wordreference.com/definition/%SELECTION%",
+							"label": "%actionList.wordreferenceDefinition%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.wordreference.com/synonyms/%SELECTION%",
+							"label": "%actionList.wordreferenceSynonym%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.wordreference.com/es/translation.asp?tranword=%SELECTION%",
+							"label": "%actionList.wordreferenceTranslateEN_ES%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.wordreference.com/es/en/translation.asp?spen=%SELECTION%",
+							"label": "%actionList.wordreferenceTranslateES_EN%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://dle.rae.es/?w=%SELECTION%",
+							"label": "%actionList.draeSearch%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://www.rae.es/dpd/%SELECTION%",
+							"label": "%actionList.draeDpdSearch%"
+						},
+						{
+							"languages": [
+								"*"
+							],
+							"url": "https://en.wikipedia.org/w/index.php?search=%SELECTION%",
+							"label": "%actionList.wikipediaSearch%"
+						},
+						{
+							"languages": [
 								"php"
 							],
 							"defaultFor": [
@@ -105,6 +189,17 @@
 							],
 							"url": "https://developer.mozilla.org/es/search?q=%SELECTION%",
 							"label": "%actionList.mozillaDeveloperSearch%"
+						},
+						{
+							"languages": [
+								"sql",
+								"php"
+							],
+							"defaultFor": [
+								"sql"
+							],
+							"url": "https://dev.mysql.com/doc/search/?q=%SELECTION%",
+							"label": "%actionList.devMySqlSearch%"
 						}
 					],
 					"description": "%properties.actionList%"

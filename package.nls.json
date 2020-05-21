@@ -3,10 +3,24 @@
 	"commands.searchTheWebActionList": "Search the web using...",
 	"configuration.title": "Search the web configuration",
 	"properties.actionList": "Search the web action list. You can specify an array of URLs with %SELECTION% (selected text) and %LANG% (current file language) parameters, their labels and the languages that it will be available for.",
+
 	"actionList.googleSearch": "Google Search",
-	"actionList.duckDuckGoSearch": "DuckDuckGo Search",
 	"actionList.googleSearchWithLang": "Google Search (+language)",
+	"actionList.duckDuckGoSearch": "DuckDuckGo Search",
 	"actionList.duckDuckGoSearchWithLang": "DuckDuckGo Search (+language)",
+	"actionList.yandexSearch": "Yandex Search",
+	"actionList.yandexSearchWithLang": "Yandex Search (+language)",
+	"actionList.translateWithDeeplEN_ES": "Translate with DeepL (EN-ES)",
+	"actionList.translateWithGoogleES": "Translate with Google Translator (ES)",
+	"actionList.yandexTranslatorAuto": "Translate with Yandex Translator (RU)",
+	"actionList.wordreferenceDefinition": "WordReference definition (EN)",
+	"actionList.wordreferenceSynonym": "WordReference synonyms (EN)",
+	"actionList.wordreferenceTranslateEN_ES": "Translate with WordReference (EN-ES)",
+	"actionList.wordreferenceTranslateES_EN": "Translate with WordReference (ES-EN)",
+	"actionList.draeSearch": "DRAE definition (ES)",
+	"actionList.draeDpdSearch": "DRAE-DPD Search (ES)",
+	"actionList.wikipediaSearch": "Wikipedia (EN)",
 	"actionList.phpHelpSearch": "PHP Help Search",
-	"actionList.mozillaDeveloperSearch": "Mozilla Developer Search"
+	"actionList.mozillaDeveloperSearch": "Mozilla Developer Search",
+	"actionList.devMySqlSearch": "MySQL Documentation Search"
 }
