@@ -4,10 +4,13 @@ All notable changes to the "search-the-web" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-### 0.0.3 (2020-05-21)
+### 0.3.0 (2020-05-21)
 ### Added
 - Public repository
-
+### Changed
+- Context menu actions show even if no text is selected
+- Version numbers
+  
 ### 0.0.2 (2020-05-21)
 ### Added
 - If no text is selected the word at cursor position will be searched.
