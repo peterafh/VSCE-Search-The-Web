@@ -2,7 +2,7 @@
 	"name": "search-the-web",
 	"displayName": "Search the web",
 	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"publisher": "peterfh",
 	"engines": {
 		"vscode": "^1.45.0"
