@@ -111,6 +111,10 @@ None at the moment.
 
 ## Release Notes
 
+### 0.3.2
+- Added icon image
+- Security fixes
+
 ### 0.3.0 (2020-05-21)
 ### Added
 - Public repository

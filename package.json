@@ -1,6 +1,7 @@
 {
 	"name": "search-the-web",
 	"displayName": "Search the web",
+	"icon": "img/icon.png",
 	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
 	"version": "0.3.1",
 	"publisher": "peterfh",
