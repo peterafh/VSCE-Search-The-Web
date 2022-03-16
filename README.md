@@ -4,6 +4,8 @@ This extension allows you to open the default browser and search the selected te
 
 If no text is selected the word at cursor position will be searched. Useful if you want to use it for language reference, just as you can do in most IDEs to get help on the current word when you hit F1.
 
+[Example](./img/usage-ctrl-f1.gif)
+
 Fork from **Open in web** by **VCaveman**\
 https://marketplace.visualstudio.com/items?itemName=VCaveman.open-in-web
 
