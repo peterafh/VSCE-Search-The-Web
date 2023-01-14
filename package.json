@@ -3,7 +3,7 @@
 	"displayName": "Search the web",
 	"icon": "img/icon.png",
 	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
-	"version": "0.3.3",
+	"version": "0.3.4",
 	"publisher": "peterfh",
 	"homepage": "https://github.com/peterafh/VSCE-Search-The-Web",
 	"repository": {
