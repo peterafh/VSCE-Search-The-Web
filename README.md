@@ -113,6 +113,9 @@ None at the moment.
 
 ## Release Notes
 
+### 0.3.3
+- Security fixes
+
 ### 0.3.2
 - Added icon image
 - Security fixes

@@ -4,6 +4,9 @@ All notable changes to the "search-the-web" extension will be documented in this
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+### 0.3.3 (2022-01-14)
+- Security fixes
+
 ### 0.3.1 (2021-04-07)
 - Security fix
 
