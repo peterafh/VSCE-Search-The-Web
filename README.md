@@ -113,6 +113,9 @@ None at the moment.
 
 ## Release Notes
 
+### 0.3.5
+- Security fixes
+
 ### 0.3.4
 - Security fixes
 
