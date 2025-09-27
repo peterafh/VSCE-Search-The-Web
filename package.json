@@ -3,7 +3,7 @@
 	"displayName": "Search the web",
 	"icon": "img/icon.png",
 	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
-	"version": "0.3.5",
+	"version": "0.3.6",
 	"publisher": "peterfh",
 	"homepage": "https://github.com/peterafh/VSCE-Search-The-Web",
 	"repository": {
@@ -11,7 +11,7 @@
 		"url": "https://github.com/peterafh/VSCE-Search-The-Web"
 	},
 	"engines": {
-		"vscode": "^1.45.0"
+		"vscode": "^1.98.0"
 	},
 	"categories": [
 		"Other"
@@ -217,17 +217,17 @@
 		"test": "node ./test/runTest.js"
 	},
 	"dependencies": {
-		"vscode-nls": "^2.0.2"
+		"vscode-nls": "^5"
 	},
 	"devDependencies": {
-		"@types/vscode": "^1.45.0",
-		"@types/glob": "^7.1.1",
-		"@types/mocha": "^7.0.2",
-		"@types/node": "^13.11.0",
-		"eslint": "^6.8.0",
-		"glob": "^7.1.6",
-		"mocha": "^10.2.0",
-		"typescript": "^3.8.3",
-		"vscode-test": "^1.3.0"
+		"@types/glob": "^8",
+        "@types/mocha": "^10",
+        "@types/node": "^24.0.0",
+		"@types/vscode": "^1.98.0",
+        "eslint": "^9",
+		"glob": "^11",
+        "mocha": "^11",
+		"vscode-test": "^1.3.0",
+        "typescript": "^5"
 	}
 }
