@@ -7,6 +7,9 @@ Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how 
 
 ## Release Notes
 
+### 0.3.7 (2026-03-27)
+- Update npm dependencies.
+
 ### 0.3.6 (2025-09-27)
 - Update npm dependencies.
 - Remove changes info from README.md and keep it in CHANGELOG.md.
