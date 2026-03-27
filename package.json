@@ -1,233 +1,234 @@
 {
-	"name": "search-the-web",
-	"displayName": "Search the web",
-	"icon": "img/icon.png",
-	"description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
-	"version": "0.3.7",
-	"publisher": "peterfh",
-	"homepage": "https://github.com/peterafh/VSCE-Search-The-Web",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/peterafh/VSCE-Search-The-Web"
-	},
-	"engines": {
-		"vscode": "^1.98.0"
-	},
-	"categories": [
-		"Other"
-	],
-	"activationEvents": [
-		"onCommand:search-the-web.search",
-		"onCommand:search-the-web.searchTheWebActionList"
-	],
-	"main": "./extension.js",
-	"contributes": {
-		"menus": {
-			"editor/context": [
-				{
-					"command": "search-the-web.search",
-					"group": "navigation"
-				},
-				{
-					"command": "search-the-web.searchTheWebActionList",
-					"group": "navigation"
-				}
-			]
-		},
-		"commands": [
-			{
-				"command": "search-the-web.search",
-				"title": "%commands.search%"
-			},
-			{
-				"command": "search-the-web.searchTheWebActionList",
-				"title": "%commands.searchTheWebActionList%"
-			}
-		],
-		"keybindings": [
-			{
-				"command": "search-the-web.search",
-				"key": "ctrl+f1",
-				"mac": "cmd+f1"
-			}
-		],
-		"configuration": {
-			"title": "%configuration.title%",
-			"properties": {
-				"search-the-web.actionList": {
-					"type": "array",
-					"default": [
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.google.com/search?q=%SELECTION%",
-							"label": "%actionList.googleSearch%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.google.com/search?q=%LANG%%20%SELECTION%",
-							"label": "%actionList.googleSearchWithLang%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://duckduckgo.com/?q=%SELECTION%",
-							"label": "%actionList.duckDuckGoSearch%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://duckduckgo.com/?q=%LANG%%20%SELECTION%",
-							"label": "%actionList.duckDuckGoSearchWithLang%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://yandex.ru/search/?text=%SELECTION%",
-							"label": "%actionList.yandexSearch%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://yandex.ru/search/?text=%LANG%%20%SELECTION%",
-							"label": "%actionList.yandexSearchWithLang%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.deepl.com/translator#en/es/%SELECTION%",
-							"label": "%actionList.translateWithDeeplEN_ES%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=es&text=%SELECTION%",
-							"label": "%actionList.translateWithGoogleES%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://translate.yandex.ru/?text=%SELECTION%",
-							"label": "%actionList.yandexTranslatorAuto%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.wordreference.com/definition/%SELECTION%",
-							"label": "%actionList.wordreferenceDefinition%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.wordreference.com/synonyms/%SELECTION%",
-							"label": "%actionList.wordreferenceSynonym%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.wordreference.com/es/translation.asp?tranword=%SELECTION%",
-							"label": "%actionList.wordreferenceTranslateEN_ES%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.wordreference.com/es/en/translation.asp?spen=%SELECTION%",
-							"label": "%actionList.wordreferenceTranslateES_EN%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://dle.rae.es/?w=%SELECTION%",
-							"label": "%actionList.draeSearch%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://www.rae.es/dpd/%SELECTION%",
-							"label": "%actionList.draeDpdSearch%"
-						},
-						{
-							"languages": [
-								"*"
-							],
-							"url": "https://en.wikipedia.org/w/index.php?search=%SELECTION%",
-							"label": "%actionList.wikipediaSearch%"
-						},
-						{
-							"languages": [
-								"php"
-							],
-							"defaultFor": [
-								"php"
-							],
-							"url": "https://www.php.net/search.php?show=quickref&pattern=%SELECTION%",
-							"label": "%actionList.phpHelpSearch%"
-						},
-						{
-							"languages": [
-								"html",
-								"php",
-								"javascript",
-								"css"
-							],
-							"defaultFor": [
-								"html",
-								"javascript",
-								"css"
-							],
-							"url": "https://developer.mozilla.org/es/search?q=%SELECTION%",
-							"label": "%actionList.mozillaDeveloperSearch%"
-						},
-						{
-							"languages": [
-								"sql",
-								"php"
-							],
-							"defaultFor": [
-								"sql"
-							],
-							"url": "https://dev.mysql.com/doc/search/?q=%SELECTION%",
-							"label": "%actionList.devMySqlSearch%"
-						}
-					],
-					"description": "%properties.actionList%"
-				}
-			}
-		}
-	},
-	"scripts": {
-		"lint": "eslint .",
-		"pretest": "npm run lint",
-		"test": "node ./test/runTest.js"
-	},
-	"dependencies": {
-		"vscode-nls": "^5"
-	},
-	"devDependencies": {
-		"@types/glob": "^8",
+    "name": "search-the-web",
+    "displayName": "Search the web",
+    "icon": "img/icon.png",
+    "description": "Open default browser and search the selected text using a predefined URL, depending on document language.",
+    "version": "0.3.7",
+    "publisher": "peterfh",
+    "homepage": "https://github.com/peterafh/VSCE-Search-The-Web",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/peterafh/VSCE-Search-The-Web"
+    },
+    "engines": {
+        "vscode": "^1.98.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:search-the-web.search",
+        "onCommand:search-the-web.searchTheWebActionList"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "menus": {
+            "editor/context": [
+                {
+                    "command": "search-the-web.search",
+                    "group": "navigation"
+                },
+                {
+                    "command": "search-the-web.searchTheWebActionList",
+                    "group": "navigation"
+                }
+            ]
+        },
+        "commands": [
+            {
+                "command": "search-the-web.search",
+                "title": "%commands.search%"
+            },
+            {
+                "command": "search-the-web.searchTheWebActionList",
+                "title": "%commands.searchTheWebActionList%"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "search-the-web.search",
+                "key": "ctrl+f1",
+                "mac": "cmd+f1"
+            }
+        ],
+        "configuration": {
+            "title": "%configuration.title%",
+            "properties": {
+                "search-the-web.actionList": {
+                    "type": "array",
+                    "default": [
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.google.com/search?q=%SELECTION%",
+                            "label": "%actionList.googleSearch%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.google.com/search?q=%LANG%%20%SELECTION%",
+                            "label": "%actionList.googleSearchWithLang%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://duckduckgo.com/?q=%SELECTION%",
+                            "label": "%actionList.duckDuckGoSearch%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://duckduckgo.com/?q=%LANG%%20%SELECTION%",
+                            "label": "%actionList.duckDuckGoSearchWithLang%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://yandex.ru/search/?text=%SELECTION%",
+                            "label": "%actionList.yandexSearch%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://yandex.ru/search/?text=%LANG%%20%SELECTION%",
+                            "label": "%actionList.yandexSearchWithLang%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.deepl.com/translator#en/es/%SELECTION%",
+                            "label": "%actionList.translateWithDeeplEN_ES%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://translate.google.com/#view=home&op=translate&sl=auto&tl=es&text=%SELECTION%",
+                            "label": "%actionList.translateWithGoogleES%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://translate.yandex.ru/?text=%SELECTION%",
+                            "label": "%actionList.yandexTranslatorAuto%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.wordreference.com/definition/%SELECTION%",
+                            "label": "%actionList.wordreferenceDefinition%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.wordreference.com/synonyms/%SELECTION%",
+                            "label": "%actionList.wordreferenceSynonym%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.wordreference.com/es/translation.asp?tranword=%SELECTION%",
+                            "label": "%actionList.wordreferenceTranslateEN_ES%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.wordreference.com/es/en/translation.asp?spen=%SELECTION%",
+                            "label": "%actionList.wordreferenceTranslateES_EN%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://dle.rae.es/?w=%SELECTION%",
+                            "label": "%actionList.draeSearch%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://www.rae.es/dpd/%SELECTION%",
+                            "label": "%actionList.draeDpdSearch%"
+                        },
+                        {
+                            "languages": [
+                                "*"
+                            ],
+                            "url": "https://en.wikipedia.org/w/index.php?search=%SELECTION%",
+                            "label": "%actionList.wikipediaSearch%"
+                        },
+                        {
+                            "languages": [
+                                "php"
+                            ],
+                            "defaultFor": [
+                                "php"
+                            ],
+                            "url": "https://www.php.net/search.php?show=quickref&pattern=%SELECTION%",
+                            "label": "%actionList.phpHelpSearch%"
+                        },
+                        {
+                            "languages": [
+                                "html",
+                                "php",
+                                "javascript",
+                                "css"
+                            ],
+                            "defaultFor": [
+                                "html",
+                                "javascript",
+                                "css"
+                            ],
+                            "url": "https://developer.mozilla.org/es/search?q=%SELECTION%",
+                            "label": "%actionList.mozillaDeveloperSearch%"
+                        },
+                        {
+                            "languages": [
+                                "sql",
+                                "php"
+                            ],
+                            "defaultFor": [
+                                "sql"
+                            ],
+                            "url": "https://dev.mysql.com/doc/search/?q=%SELECTION%",
+                            "label": "%actionList.devMySqlSearch%"
+                        }
+                    ],
+                    "description": "%properties.actionList%"
+                }
+            }
+        }
+    },
+    "scripts": {
+        "lint": "eslint .",
+        "pretest": "npm run lint",
+        "test": "node ./test/runTest.js"
+    },
+    "dependencies": {
+        "vscode-nls": "^5"
+    },
+    "devDependencies": {
+        "@types/glob": "^8",
         "@types/mocha": "^10",
         "@types/node": "^25.0.0",
-		"@types/vscode": "^1.98.0",
+        "@types/vscode": "^1.98.0",
         "eslint": "^10",
-		"glob": "^13",
+        "glob": "^13",
         "mocha": "^11",
-		"vscode-test": "^1.3.0",
+        "vscode-test": "^1.3.0",
         "typescript": "^6"
-	}
+    },
+    "license": "MIT"
 }
